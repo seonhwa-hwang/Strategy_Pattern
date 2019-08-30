@@ -12,4 +12,8 @@ public abstract class Calculate {
 		excuteCalculate.excute(A, B);
 	}
 	
+	public void setExcuteCalculate(ExcuteCalculate ec) {
+		excuteCalculate = ec;
+	}
+	
 }

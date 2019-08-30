@@ -21,7 +21,10 @@ public class Calculator {
 				Calculate plus = new PlusCalculator();
 				plus.display(A, B);
 				plus.performCalculate(A, B);
-				System.out.println(" ");
+				System.out.println("setter를 이용해서 -계산으로 바꿔 볼게요");
+				plus.setExcuteCalculate(new Minus());
+				plus.performCalculate(A, B);
+				
 				break;
 			case "-":
 				Calculate minus = new MinusCalculator();
